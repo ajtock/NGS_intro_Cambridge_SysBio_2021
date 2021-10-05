@@ -1528,8 +1528,8 @@ If you have time, use a text editor to write a [bash script](https://www.linux.c
 
 <!--There are two text editors available in the virtual environment, the first of which is a lot more sophisticated:-->
 <!-- -->
-<!--> Applications > Accessories > Atom --> 
-<!--> Applications > Accessories > Text Editor -->
+<!-- > Applications > Accessories > Atom --> 
+<!-- > Applications > Accessories > Text Editor -->
 
 <details>
   <summary><em><strong>Hint</strong> (click to reveal/hide)</em></summary><p>
