@@ -1,6 +1,6 @@
 # Introduction to next-generation sequencing data: tools and resources
 
-This [link](https://ajtock.github.io/NGS_intro_Cambridge_SysBio/) will take you to the GitHub Pages rendering of this practical. If nothing changes when you click on it, you're already there!
+This [link](https://ajtock.github.io/NGS_intro_Cambridge_SysBio_2021/) will take you to the GitHub Pages rendering of this practical. If nothing changes when you click on it, you're already there!
 
 If you have any questions or comments about the practical, please email Andy Tock at <ajt200@cam.ac.uk>.
 
@@ -8,9 +8,7 @@ If you have any questions or comments about the practical, please email Andy Toc
 
 ## Setup
 
-- The practical session will run via Zoom ([link](https://us02web.zoom.us/j/89089665179?pwd=N29yZHZCa0lDNGF4ZisrZGpUUUREZz09))
-- We will use a shared Google Doc for you to post questions ([link](https://docs.google.com/document/d/136wAhexkROra3255uN6WjwRxMjOSWd3E9EdqnxwgBks))
-- We will use a Linux virtual environment that you can access from your internet browser; you will receive details for login by email. All of the software we'll be using today has been pre-installed in this virtual environment, as software installation can be a time-consuming task. Nonetheless, links to the software installation pages are provided below, which you can refer back to later if you want to run subsequent analyses on your own computer:
+- All of the software we'll be using today has been pre-installed on the Linux computers in the Bioinformatics Training Room, as software installation can be a time-consuming task. Nonetheless, links to the software installation pages are provided below, which you can refer back to later if you want to run subsequent analyses on your own computer:
   * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
   * [Cutadapt](https://cutadapt.readthedocs.io/en/stable/installation.html)
   * [Bowtie 2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
@@ -92,7 +90,7 @@ This practical should therefore give you a general feel for how NGS data process
 
 ## Inspecting the reads in FASTQ format
 
-On your virtual desktop, you should see a shortcut to a command-line terminal (a black square with a dollar symbol followed by an underscore) towards the bottom of the screen.
+On your desktop, you should see a shortcut to a command-line terminal (a black square with a dollar symbol followed by an underscore) towards the bottom of the screen.
 This provides a command-line interface for interacting with and navigating around the file system of the computer, as opposed to a graphical user interface (GUI).
 On opening this terminal window, you should see that your current working directory (folder) is `~/Course_Materials` (the tilde symbol, `~`, is shorthand for your home directory).
 This is followed by the command prompt (`$` and then a rectangular cursor) where you can type text to issue commands that the computer will execute.
@@ -121,7 +119,7 @@ cd /home/ubuntu/Course_Materials/NGS_intro/
 ```
 
 The sequencing reads are contained in gzip-compressed [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) files, a standardised format that NGS data analysis tools have been developed to handle.
-These files are available in the online virtual environment that you're accessing remotely, so there's no need to download them.
+These files are available on the Linux computers we are using today, so there's no need to download them.
 The files are located in `/home/ubuntu/Course_Materials/NGS_intro/fastq/`.
 
 Data in FASTQ format conform to these standards:
@@ -1466,7 +1464,7 @@ A widely used example of this is the [Integrative Genomics Viewer (IGV)](http://
 
 > "The Integrative Genomics Viewer (IGV) is a high-performance, easy-to-use, interactive tool for the visual exploration of genomic data. It supports flexible integration of all the common types of genomic data and metadata, investigator-generated or publicly available, loaded from local or cloud sources."  
 
-As with the other tools we have used today, IGV is pre-installed in the virtual environment.
+As with the other tools we have used today, IGV is pre-installed on the Linux computers we are using.
 But unlike the other tools, IGV has a graphical user interface (GUI).
 Run `igv` at the command prompt to start it.
 
@@ -1528,10 +1526,12 @@ In this way, each time the pipeline is run, a different sample name could be ass
 
 If you have time, use a text editor to write a [bash script](https://www.linux.com/training-tutorials/writing-simple-bash-script/) named `variant_calling_pipeline.sh` that combines the commands we have run in each of the five steps of the pipeline.
 
-There are two text editors available in the virtual environment, the first of which is a lot more sophisticated:
 
-> Applications > Accessories > Atom  
-> Applications > Accessories > Text Editor  
+[//] # (There are two text editors available in the virtual environment, the first of which is a lot more sophisticated:)
+[//] # ()
+[//] # (> Applications > Accessories > Atom ) 
+[//] # (> Applications > Accessories > Text Editor )
+
 
 <details>
   <summary><em><strong>Hint</strong> (click to reveal/hide)</em></summary><p>
