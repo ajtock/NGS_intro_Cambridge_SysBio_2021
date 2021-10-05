@@ -8,7 +8,7 @@ If you have any questions or comments about the practical, please email Andy Toc
 
 ## Setup
 
-- All of the software we'll be using today has been pre-installed on the Linux computers in the Bioinformatics Training Room, as software installation can be a time-consuming task. Nonetheless, links to the software installation pages are provided below, which you can refer back to later if you want to run subsequent analyses on your own computer:
+All of the software we'll be using today has been pre-installed on the Linux computers in the Bioinformatics Training Room, as software installation can be a time-consuming task. Nonetheless, links to the software installation pages are provided below, which you can refer back to later if you want to run subsequent analyses on your own computer:
   * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
   * [Cutadapt](https://cutadapt.readthedocs.io/en/stable/installation.html)
   * [Bowtie 2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
@@ -1526,12 +1526,10 @@ In this way, each time the pipeline is run, a different sample name could be ass
 
 If you have time, use a text editor to write a [bash script](https://www.linux.com/training-tutorials/writing-simple-bash-script/) named `variant_calling_pipeline.sh` that combines the commands we have run in each of the five steps of the pipeline.
 
-
-[//] # (There are two text editors available in the virtual environment, the first of which is a lot more sophisticated:)
-[//] # ()
-[//] # (> Applications > Accessories > Atom ) 
-[//] # (> Applications > Accessories > Text Editor )
-
+<!--There are two text editors available in the virtual environment, the first of which is a lot more sophisticated:-->
+<!-- -->
+<!--> Applications > Accessories > Atom --> 
+<!--> Applications > Accessories > Text Editor -->
 
 <details>
   <summary><em><strong>Hint</strong> (click to reveal/hide)</em></summary><p>
