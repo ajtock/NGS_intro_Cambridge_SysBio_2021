@@ -764,7 +764,7 @@ Therefore, while they are genetically different from one another, they are each 
 
 Reference genome assemblies are stored in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format), with one of the following file extensions: `.fa`, `.fas` or `.fasta`.
 For species with chromosome-level assemblies, each chromosome is represented as a separate nucleotide sequence in the FASTA file.
-The first line of each separate sequence in the FASTA file is a description line, beginning with a greater-than symbol followed by a description of the sequence (e.g., `>Chr1`).
+The first line of each separate sequence in the FASTA file is a description line, beginning with a greater-than symbol followed by a name or unique identifier for the sequence (e.g., `>Chr1`) and optional additional information.
 The nucleotide sequence is wrapped over the subsequent lines up until the next distinct sequence description line.
 
 The reference genome assembly for *Arabidopsis thaliana* (`TAIR10_chr_all.fa`) is located in `/home/ubuntu/Course_Materials/NGS_intro/genome/`.
