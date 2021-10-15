@@ -1325,7 +1325,8 @@ The columns contain information about the the location and nature of the variant
 | ID | `.` in the absence of unique identifiers
 | REF | Reference allele at variant site
 | ALT | Alternate (non-reference) allele(s) at variant site
-| QUAL | `.` when quality filters were not applied, `PASS` where filters were passed, or named filters the variant site failed
+| QUAL | Phred-scaled quality score for the called ALT allele
+| FILTER | `.` when quality filters were not applied, `PASS` where filters were passed, or named filters the variant site failed
 | INFO | Additional information, including read depth across all samples (DP) and alternate allele count (AC)
 
 In this case, the final column ("results/[...]") provides the inferred genotype ("GT") of L*er* at the variant site, based on the likelihoods of the possible genotypes ("PL").
