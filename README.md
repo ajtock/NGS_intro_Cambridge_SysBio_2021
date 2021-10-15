@@ -103,24 +103,23 @@ pwd
 
 ### Output:
 ```
-/home/ubuntu/Course_Materials
+/home/participant/Course_Materials
 ```
 
 This is a useful command to run every now and again to check exactly where you're working in the directory structure, because often you'll expect to find particular files in subdirectories of your current working directory.
 
 Run `ls` to list the contents of your current working directory.
-Navigate into the `NGS_intro/` subdirectory with `cd NGS_intro/` (<ins>c</ins>hange <ins>d</ins>irectory to `NGS_intro/`), and run `ls` again to see its contents.
-Navigate into the `fastq/` and `genome/` subdirectories of `NGS_intro/` using `cd` and `cd ..` commands (the latter of which navigates one directory up in the directory structure), and list their contents using `ls`.
+Navigate into the `fastq/` and `genome/` subdirectories of `Course_Materials/` using `cd` (<ins>c</ins>hange <ins>d</ins>irectory) and `cd ..` commands (the latter of which navigates one directory up in the directory structure), and list their contents using `ls`.
 This process of navigating around the directory structure has involved issuing `cd` commands followed by *relative paths*.
 It's also possible and sometimes more appropriate to navigate to particular locations in the directory structure using *absolute paths*:
 
 ```
-cd /home/ubuntu/Course_Materials/NGS_intro/
+cd /home/participant/Course_Materials/
 ```
 
 The sequencing reads are contained in gzip-compressed [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) files, a standardised format that NGS data analysis tools have been developed to handle.
 These files are available on the Linux computers we are using today, so there's no need to download them.
-The files are located in `/home/ubuntu/Course_Materials/NGS_intro/fastq/`.
+The files are located in `/home/participant/Course_Materials/fastq/`.
 
 Data in FASTQ format conform to these standards:
 
@@ -489,9 +488,9 @@ cutadapt --help | less
 
 ### Output:
 ```
-cutadapt version 2.10
+cutadapt version 3.5
 
-Copyright (C) 2010-2020 Marcel Martin <marcel.martin@scilifelab.se>
+Copyright (C) 2010-2021 Marcel Martin <marcel.martin@scilifelab.se>
 
 cutadapt removes adapter sequences from high-throughput sequencing reads.
 
@@ -767,7 +766,7 @@ For species with chromosome-level assemblies, each chromosome is represented as 
 The first line of each separate sequence in the FASTA file is a description line, beginning with a greater-than symbol followed by a name or unique identifier for the sequence (e.g., `>Chr1`) and optional additional information.
 The nucleotide sequence is wrapped over the subsequent lines up until the next distinct sequence description line.
 
-The reference genome assembly for *Arabidopsis thaliana* (`TAIR10_chr_all.fa`) is located in `/home/ubuntu/Course_Materials/NGS_intro/genome/`.
+The reference genome assembly for *Arabidopsis thaliana* (`TAIR10_chr_all.fa`) is located in `/home/participant/Course_Materials/genome/`.
 This was previously downloaded from [The Arabidopsis Information Resource (TAIR)](https://www.arabidopsis.org/download/index-auto.jsp?dir=%2Fdownload_files%2FGenes%2FTAIR10_genome_release%2FTAIR10_chromosome_files), so there's no need to download it for this practical.
 
 ### Exercise 5
@@ -825,7 +824,7 @@ bowtie2 --help | less
 
 ### Output:
 ```
-Bowtie 2 version 2.4.2 by Ben Langmead (langmea@cs.jhu.edu, www.cs.jhu.edu/~langmea)
+Bowtie 2 version 2.4.4 by Ben Langmead (langmea@cs.jhu.edu, www.cs.jhu.edu/~langmea)
 Usage: 
   bowtie2 [options]* -x <bt2-idx> {-1 <m1> -2 <m2> | -U <r> | --interleaved <i> | -b <bam>} [-S <sam>]
 
@@ -1473,11 +1472,11 @@ You may need to select "More..." first to see available reference genomes other 
 
 To load the filtered read alignments in BAM format, navigate through the "File" menu to its location in the file system:
 
-> File > Load from File... > Course_Materials/NGS_intro/results/samtools/SRR3166543_top1M_MappedOn_TAIR10_chr_all_markdup_unique_sort.bam  
+> File > Load from File... > Course_Materials/results/samtools/SRR3166543_top1M_MappedOn_TAIR10_chr_all_markdup_unique_sort.bam  
 
 Load the VCF file containing filtered variant sites in the same way:
 
-> File > Load from File... > Course_Materials/NGS_intro/results/bcftools/SRR3166543_top1M_variants_filtered.vcf  
+> File > Load from File... > Course_Materials/results/bcftools/SRR3166543_top1M_variants_filtered.vcf  
 
 At the top of the browser, there's a left–right scrollable, in–out zoomable rectangular panel showing coordinates in the reference genome sequence.
 You can select individual sequences (e.g., chromosomes) within the reference sequence by clicking on their names within in the drop-down menu to the right of the genome selection drop-down menu at the top-left of the window.
