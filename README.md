@@ -1024,7 +1024,7 @@ What proportion aligned to multiple genomic locations ("multiple" alignments)?
   Note that for a real analysis where time isn't limiting, it's advisable to use the most sensitive (slowest) preset option for end-to-end read alignment (`--very-sensitive`).
 </p></details>
 
-We should now have an ouput file containing alignments in [Sequence Alignment/Map (SAM) format](https://samtools.github.io/hts-specs/SAMv1.pdf).
+We should now have an output file containing alignments in [Sequence Alignment/Map (SAM) format](https://samtools.github.io/hts-specs/SAMv1.pdf).
 Print to stdout the first 6 lines of the "alignment section" of the SAM file using [SAMtools](http://www.htslib.org/doc/samtools.html) (by default, `samtools view` doesn't output the SAM "header section").
 
 ```
@@ -1132,7 +1132,7 @@ To remove duplicates alignments, we need to:
 &> results/samtools/SRR3166543_top1M_MappedOn_TAIR10_chr_all_markdup_report.log
 ```
 
-In the commands above, you'll notice the inclusion of multiple instances of ` - `, which serve as filename placeholders for standard input (stdin) or standard ouput (stdout).
+In the commands above, you'll notice the inclusion of multiple instances of ` - `, which serve as filename placeholders for standard input (stdin) or standard output (stdout).
 This allows us to pipe (`|`) stdout from one command to stdin for the subsequent command, obviating the need to write the output of each command to a file.
 This is useful here because we're only interested in obtaining the output from `samtools markdup -r`.
  
